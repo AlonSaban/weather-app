@@ -1,0 +1,18 @@
+// vite.config.js
+import { defineConfig } from "file:///home/alon/Desktop/code/github-weather/node_modules/vite/dist/node/index.js";
+import react from "file:///home/alon/Desktop/code/github-weather/node_modules/@vitejs/plugin-react-swc/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [react()],
+  root: "/",
+  // Set the root directory
+  build: {
+    outDir: "./frontend/src",
+    // Output directory
+    assetsDir: ""
+    // Directory for static assets relative to outDir
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvaG9tZS9hbG9uL0Rlc2t0b3AvY29kZS9naXRodWItd2VhdGhlclwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiL2hvbWUvYWxvbi9EZXNrdG9wL2NvZGUvZ2l0aHViLXdlYXRoZXIvdml0ZS5jb25maWcuanNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL2hvbWUvYWxvbi9EZXNrdG9wL2NvZGUvZ2l0aHViLXdlYXRoZXIvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xuaW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0LXN3YydcblxuLy8gaHR0cHM6Ly92aXRlanMuZGV2L2NvbmZpZy9cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtyZWFjdCgpXSxcbiAgcm9vdDogJy8nLCAvLyBTZXQgdGhlIHJvb3QgZGlyZWN0b3J5XG4gIGJ1aWxkOiB7XG4gICAgb3V0RGlyOiAnLi9mcm9udGVuZC9zcmMnLCAvLyBPdXRwdXQgZGlyZWN0b3J5XG4gICAgYXNzZXRzRGlyOiAnJywgLy8gRGlyZWN0b3J5IGZvciBzdGF0aWMgYXNzZXRzIHJlbGF0aXZlIHRvIG91dERpclxuICB9LFxufSlcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBb1MsU0FBUyxvQkFBb0I7QUFDalUsT0FBTyxXQUFXO0FBR2xCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVMsQ0FBQyxNQUFNLENBQUM7QUFBQSxFQUNqQixNQUFNO0FBQUE7QUFBQSxFQUNOLE9BQU87QUFBQSxJQUNMLFFBQVE7QUFBQTtBQUFBLElBQ1IsV0FBVztBQUFBO0FBQUEsRUFDYjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==
