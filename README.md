@@ -8,7 +8,7 @@ This is a simple weather web application built using Vite for the frontend with 
 
 To run the app locally, you'll need Node.js and npm installed on your machine. Once you have them installed, follow these steps:
 
-    git clone https://github.com/your-username/weather-app.git
+    git clone https://github.com/AlonSaban/weather-app.git
     cd weather-app
     npm install
     npm run dev
