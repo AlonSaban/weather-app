@@ -10,14 +10,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [21.x]
-
     steps:
     - uses: actions/checkout@v2
 
     - name: Install dependencies
+      with:
+        node-version: '20.x'
       run: npm ci
 
     - name: Lint code
