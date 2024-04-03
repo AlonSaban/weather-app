@@ -24,3 +24,5 @@ axios: Promise-based HTTP client for the browser and Node.js.
 nodemon: Utility that automatically restarts your Node.js server when files change.
 React: A JavaScript library for building user interfaces.
 cors: Middleware for Express to enable Cross-Origin Resource Sharing.
+dotenv: Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology
+mongoose: Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment

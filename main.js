@@ -2,9 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import getWeather from './backend/components/weather.js';
 import bodyParser from 'body-parser';
+import 'dotenv/config'
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT;
 
 app.use(cors())
 app.use(bodyParser.json());
