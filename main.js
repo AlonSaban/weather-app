@@ -1,12 +1,14 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
+import getWeather from './backend/components/weather.js';
+import bodyParser from 'body-parser';
+
 const app = express();
 const port = 8000;
-const getWeather = require('./backend/components/weather.js')
 
 app.use(cors())
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
   res.send('Hello from the Node.js backend!');
