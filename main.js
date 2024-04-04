@@ -3,6 +3,7 @@ import cors from 'cors';
 import getWeather from './backend/components/weather.js';
 import bodyParser from 'body-parser';
 import 'dotenv/config'
+import connectDB from './backend/modules/database.js'
 
 const app = express();
 const port = process.env.PORT;
@@ -29,3 +30,5 @@ app.post('/apicall', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port number ${port}`);
 })
+
+connectDB()
