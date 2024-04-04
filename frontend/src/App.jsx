@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './styles/App.css';
+import Table from '../components/Table'
 
 function App() {
   const [days, setDays] = useState([]);
@@ -33,38 +34,7 @@ function App() {
       </div>
 
       {days.length > 0 && (
-        <div className="table-container">
-          <table className="custom-table">
-            <thead>
-              <tr>
-                <th>Day</th>
-                {days.map((day, index) => (
-                  <th key={index}>{day.datetime}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Temperature</td>
-                {days.map((day, index) => (
-                  <td key={index}>{day.temp}</td>
-                ))}
-              </tr>
-              <tr>
-                <td>Humidity</td>
-                {days.map((day, index) => (
-                  <td key={index}>{day.humidity}</td>
-                ))}
-              </tr>
-              <tr>
-                <td>Conditions</td>
-                {days.map((day, index) => (
-                  <td key={index}>{day.conditions}</td>
-                ))}
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <Table days={days}/>
       )}
     </div>
   );
