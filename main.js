@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import getWeather from './backend/components/weather.js';
 import bodyParser from 'body-parser';
+import connectDB from './backend/models/database.js'
 import 'dotenv/config'
-import connectDB from './backend/modules/database.js'
 
 const app = express();
 const port = process.env.PORT;
@@ -25,7 +25,6 @@ app.post('/apicall', (req, res) => {
       res.status(response.status).send(response.data)
     })
 })
-
 
 app.listen(port, () => {
   console.log(`Server is running on port number ${port}`);

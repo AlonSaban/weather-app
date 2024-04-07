@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../src/styles/App.css';
 import sunImg from '../src/assets/sun.png'
 import cloudy from '../src/assets/cloudy.png'
@@ -7,13 +7,7 @@ import rain from '../src/assets/rain.png'
 
 function Table(data) {
     const days = data.days
-    const [newHistory, setNewHistory] = useState(days);
 
-    useEffect(() => {
-        setNewHistory(days)
-        console.log(newHistory)
-
-    }, [days]);
 
     const weatherIcon = (condition) => {
         switch (condition) {
