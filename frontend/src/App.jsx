@@ -20,24 +20,28 @@ function App() {
   };
 
   return (
-    <div className="card">
-      <div>
-        <h1>Search Weather:</h1>
-        <form onSubmit={printSearch}>
-          <input
-            type="text"
-            name="search"
-            placeholder="Enter city name..."
-          ></input>
-          <button type="submit">Search</button>
-        </form>
+    <div className="container">
+      <div className="history">
+        <button>History</button>
       </div>
-
-      {days.length > 0 && (
-        <Table days={days}/>
-      )}
+      <div className="card">
+        <div>
+          <h1>Search Weather:</h1>
+          <form onSubmit={printSearch}>
+            <input
+              type="text"
+              name="search"
+              placeholder="Enter city name..."
+            ></input>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        {days.length > 0 && (
+          <Table days={days} />
+        )}
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
