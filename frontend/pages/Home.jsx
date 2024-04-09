@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Table from '../components/Table'
 import '../src/styles/App.css';
 
@@ -24,7 +25,7 @@ function Home() {
     return (
         <div className="container">
             <div className="history">
-                <button history={days}>History</button>
+                <Link to={{ pathname: '/history' }}>History</Link>
             </div>
             <div className="card">
                 <div>

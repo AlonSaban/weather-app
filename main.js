@@ -3,6 +3,7 @@ import cors from 'cors';
 import getWeather from './backend/components/weather.js';
 import bodyParser from 'body-parser';
 import connectDB from './backend/models/database.js'
+import postHistory from './backend/controllers/history.js'
 import 'dotenv/config'
 
 const app = express();
@@ -18,13 +19,16 @@ app.get('/', (req, res) => {
 
 app.post('/apicall', (req, res) => {
   const loaction = req.body.searchTerm
-  console.log(loaction.toLowerCase())
   getWeather(loaction)
     .then(response => {
-      console.log(`the http status is ${response.status}`)
-      res.status(response.status).send(response.data)
+      res.send(response.data)
+      postHistory(response.data)
+
     })
 })
+
+app.post('/apicall', postHistory);
+
 
 app.listen(port, () => {
   console.log(`Server is running on port number ${port}`);

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../src/styles/App.css';
 import sunImg from '../src/assets/sun.png'
 import cloudy from '../src/assets/cloudy.png'
